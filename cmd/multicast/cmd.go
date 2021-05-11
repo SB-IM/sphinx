@@ -91,7 +91,7 @@ func multicastFlags(multicastConfigOptions *multicast.ConfigOptions) []cli.Flag 
 		}),
 		altsrc.NewStringFlag(&cli.StringFlag{
 			Name:        "multicast.sinks",
-			Usage:       "Multicast targets of udp sink addresses, it's a comma seperated list, each address is composed of \"host:port\" format",
+			Usage:       "Multicast targets of udp sink addresses, it's a comma separated list, each address is composed of \"host:port\" format",
 			Value:       "",
 			DefaultText: "",
 			Destination: &multicastConfigOptions.UDPSinkAddresses,
