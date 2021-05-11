@@ -27,3 +27,9 @@ port = 5004
 
 [rtsp]
 addr = "rtsp://127.0.0.1:1234"
+
+[multicast]
+host = "0.0.0.0"
+port = 5004
+# Comma seperated list, each address is composed of "host:port" format.
+sinks = ""

@@ -9,6 +9,7 @@ import (
 	"github.com/urfave/cli/v2"
 
 	"github.com/SB-IM/sphinx/cmd/livestream"
+	"github.com/SB-IM/sphinx/cmd/multicast"
 )
 
 func init() {
@@ -36,6 +37,7 @@ func run(args []string) error {
 		},
 		Commands: []*cli.Command{
 			livestream.Command(),
+			multicast.Command(),
 		},
 	}
 
